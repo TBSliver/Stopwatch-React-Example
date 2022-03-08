@@ -1,5 +1,4 @@
 import {useEffect, useState} from "react";
-import {Button} from "./components/button";
 
 function App() {
     const [startTime, setStartTime] = useState(0);
@@ -58,9 +57,9 @@ function App() {
     return (
         <>
             <h1 id={"stopwatch-elapsed"}>{displayTime}</h1>
-            <Button id={"stopwatch-start-stop"}
-                    onClick={handleStartStop}>{startTime > 0 && endTime === 0 ? "Stop" : "Start"}</Button>
-            <Button id={"stopwatch-reset"} onClick={handleReset}>Reset</Button>
+            <button id={"stopwatch-start-stop"}
+                    onClick={handleStartStop}>{startTime > 0 && endTime === 0 ? "Stop" : "Start"}</button>
+            <button id={"stopwatch-reset"} onClick={handleReset}>Reset</button>
             {/*<div>Start Time: {startTime}</div>*/}
             {/*<div>End Time: {endTime}</div>*/}
             {/*<div>Elapsed Time: {elapsedTime}</div>*/}
